@@ -2,8 +2,15 @@ import sqlite3
 
 import os
 
+DATABASE_DIRECTORY = os.path.join(
+    os.getenv("LOCALAPPDATA"),
+    "Personal Productivity AI"
+)
+
+os.makedirs(DATABASE_DIRECTORY, exist_ok=True)
+
 DATABASE = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)),
+    DATABASE_DIRECTORY,
     "memory.db"
 )
 

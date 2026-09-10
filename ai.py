@@ -232,6 +232,7 @@ def ask_openai(message):
         tool_outputs = []
 
         for tool_call in tool_calls:
+
             arguments = json.loads(tool_call.arguments)
 
             result = execute_tool(
