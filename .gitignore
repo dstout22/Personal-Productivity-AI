@@ -1,3 +1,23 @@
-.env
-.venv/
+# Python
 __pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables / secrets
+.env
+
+# Build artifacts
+build/
+dist/
+
+# Local database
+*.db
+
+# IDE/editor files
+.vscode/
+.idea/
